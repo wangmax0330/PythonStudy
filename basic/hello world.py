@@ -174,3 +174,116 @@ hex(x)
 oct(x)
 将一个整数转换为一个八进制字符串
 '''
+
+a = 21
+b = 10
+c = 0
+
+if ( a == b ):
+   print ("1 - a 等于 b")
+else:
+   print ("1 - a 不等于 b")
+
+if ( a != b ):
+   print ("2 - a 不等于 b")
+else:
+   print ("2 - a 等于 b")
+if ( a < b ):
+   print ("4 - a 小于 b")
+else:
+   print ("4 - a 大于等于 b")
+
+if ( a > b ):
+   print ("5 - a 大于 b")
+else:
+   print ("5 - a 小于等于 b")
+
+# 修改变量 a 和 b 的值
+a = 5;
+b = 20;
+if ( a <= b ):
+   print ("6 - a 小于等于 b")
+else:
+   print ("6 - a 大于  b")
+
+if ( b >= a ):
+   print ("7 - b 大于等于 a")
+else:
+   print ("7 - b 小于 a")
+
+a = 21
+b = 10
+c = 0
+
+c = a + b
+print("1 - c 的值为：", c)
+
+c += a
+print("2 - c 的值为：", c)
+
+c *= a
+print( "3 - c 的值为：", c)
+
+c /= a
+print("4 - c 的值为：", c)
+
+c = 2
+c %= a
+print("5 - c 的值为：", c)
+
+c **= a
+print("6 - c 的值为：", c)
+
+c //= a
+print( "7 - c 的值为：", c)
+
+
+
+a = 60            # 60 = 0011 1100
+b = 13            # 13 = 0000 1101
+c = 0
+
+c = a & b;        # 12 = 0000 1100
+print ("1 - c 的值为：", c)
+
+c = a | b;        # 61 = 0011 1101
+print ("2 - c 的值为：", c)
+
+c = a ^ b;        # 49 = 0011 0001
+print ("3 - c 的值为：", c)
+
+c = ~a;           # -61 = 1100 0011
+print ("4 - c 的值为：", c)
+
+c = a << 2;       # 240 = 1111 0000
+print ("5 - c 的值为：", c)
+
+c = a >> 2;       # 15 = 0000 1111
+print ("6 - c 的值为：", c)
+
+
+
+
+
+# 例1：if 基本用法
+
+flag = False
+name = 'luren'
+if name == 'python':         # 判断变量否为'python'
+    flag = True          # 条件成立时设置标志为真
+    print ('welcome boss')    # 并输出欢迎信息
+else:
+    print (name )             # 条件不成立时输出变量名称
+
+# 例2：elif用法
+num = 5
+if num == 3:            # 判断num的值
+    print ('boss')
+elif num == 2:
+    print ('user')
+elif num == 1:
+    print ('worker')
+elif num < 0:           # 值小于零时输出
+    print ('error')
+else:
+    print ('roadman' )    # 条件均不成立时输出
